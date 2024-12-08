@@ -1,0 +1,20 @@
+.hidden {
+    display: none;
+  }
+  
+  .tab.active {
+    background-color: #fbbf24;
+    color: hsl(0, 0%, 100%);
+  }
+  
+  .modal-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+  

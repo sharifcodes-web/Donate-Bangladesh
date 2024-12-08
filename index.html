@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" them-data="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Donate Bangladesh</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="bg-white">
+  <header class="sticky top-0 bg-black shadow-md z-50 ">
+    <nav bg-black>
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <a href="blog.html" class="btn btn-ghost text-xl">Blog</a>
+        </div>
+        <div class="navbar-center">
+          <span class="btn btn-ghost text-xl"><span><img src="assets/logo.png" alt=""></span>Donate Bangladesh</span>
+        </div>
+        <div class="navbar-end" id="account-balance"><span><img src="assets/coin.png" alt=""></span>5500 BDT</div>
+      </div>
+    </nav>
+    <div class="flex justify-center items-center gap-3">
+      <button class="tab active rounded" id="donation-tab">Donation</button>
+      <button class="tab rounded" id="history-tab">History</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="donation-section">
+      <!-- Card Template -->
+      <div class="hero-content flex-col lg:flex-row">
+        <img src="assets/noakhali.png" alt="Image related to Noakhali" class="max-w-sm rounded-lg shadow-2xl">
+        <div>
+          <span class="current-donation" data-amount="0"> 0 BDT</span>
+          <h1 class="text-5xl font-bold">Support Noakhali!</h1>
+          <p class="py-6">The recent floods in Noakhali have caused significant damage...</p>
+          <input type="number" placeholder="Enter donation amount" class="input input-bordered w-full mb-4 donation-input">
+          <button class="btn btn-primary w-full donate-btn">Donate Now</button>
+        </div>
+      </div>
+      <div class="hero-content flex-col lg:flex-row">
+        <img src="assets/noakhali.png" alt="Image related to Noakhali" class="max-w-sm rounded-lg shadow-2xl">
+        <div>
+          <span class="current-donation" data-amount="0">0 BDT</span>
+          <h1 class="text-5xl font-bold">Support Noakhali!</h1>
+          <p class="py-6">The recent floods in Noakhali have caused significant damage...</p>
+          <input type="number" placeholder="Enter donation amount" class="input input-bordered w-full mb-4 donation-input">
+          <button class="btn btn-primary w-full donate-btn">Donate Now</button>
+        </div>
+      </div>
+      <div class="hero-content flex-col lg:flex-row">
+        <img src="assets/noakhali.png" alt="Image related to Noakhali" class="max-w-sm rounded-lg shadow-2xl">
+        <div>
+          <span class="current-donation" data-amount="0">0 BDT</span>
+          <h1 class="text-5xl font-bold">Support Noakhali!</h1>
+          <p class="py-6">The recent floods in Noakhali have caused significant damage...</p>
+          <input type="number" placeholder="Enter donation amount" class="input input-bordered w-full mb-4 donation-input">
+          <button class="btn btn-primary w-full donate-btn">Donate Now</button>
+        </div>
+      </div>
+      <!-- Repeat the above structure for other cards -->
+    </section>
+
+    <section id="history-section" class="hidden">
+      <h2 class="text-xl font-bold mt-5">Donation History</h2>
+      <ul id="history-list"></ul>
+    </section>
+  </main>
+
+  <!-- Modal for successful donation -->
+  <div id="success-modal" class="hidden fixed top-0 w-full h-screen bg-[#00000084] flex justify-center items-center">
+    <div class="modal-content w-[400px] p-4 bg-white rounded-lg flex flex-col justify-center items-center gap-3">
+      <p id="modal-message" class="text-center"></p>
+      <button id="close-modal" class="btn btn-primary">Close</button>
+    </div>
+  </div>
+
+  <footer class="bg-black"></footer>
+  <script src="script.js"></script>
+</body>
+</html>
